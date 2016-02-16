@@ -6,6 +6,9 @@
     </meta>
     <bindings>
         <select itemPath="html" produces="XML">
+            <urls>
+                <url>https://www.myvue.com/latest-movies/cinema/aberdeen</url>
+            </urls>
             <inputs>
                 <key id="url" as="url" required="true" type="xs:string" paramType="query"/>
                 <key id="xpath" as="xpath" default="/html/body" type="xs:string" paramType="query"/>
