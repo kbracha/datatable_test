@@ -18,7 +18,7 @@
                     // We will run it on our servers 
                     var request = y.rest(decodeURIComponent(url)); 
                     //request.url = 'https://www.google.com';
-                    response.object = { request.get().response }; 
+                    response.object = { result: request.get().response }; 
       ]]></execute>  
         </select>        
     </bindings>
