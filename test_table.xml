@@ -17,7 +17,7 @@
                     // Your javascript goes here.  
                     // We will run it on our servers 
                     request.url = 'https://www.google.com';
-                    response.object = request.get(); 
+                    response.object = { result: request.get()}; 
       ]]></execute>  
         </select>        
     </bindings>
