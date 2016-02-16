@@ -16,11 +16,11 @@
             <execute><![CDATA[           
                     // Your javascript goes here.  
                     // We will run it on our servers 
-                    document.cookie = "VueCinemas = Cinemas = 3,77; expires= Thu, 15 Dec 2017 12:00:00 UTC;"
-                    document.cookie = "CinemaSettings = CurrentCinema = 3; expires= Thu, 15 Dec 2012 12:00:00 UTC;"
+                    //document.cookie = "VueCinemas = Cinemas = 3,77; expires= Thu, 15 Dec 2017 12:00:00 UTC;"
+                    //document.cookie = "CinemaSettings = CurrentCinema = 3; expires= Thu, 15 Dec 2012 12:00:00 UTC;"
                     var request = y.rest(decodeURIComponent(url)); 
                     //request.url = 'https://www.google.com';
-                    response.object = { result: request.get().response }; 
+                    response.object = { result: request.post().response }; 
       ]]></execute>  
         </select>        
     </bindings>
