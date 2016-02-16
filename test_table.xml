@@ -15,11 +15,5 @@
                     name="compat" type="xs:string"/>
         </select>
     </request>
-    <execute><![CDATA[
-         // Your javascript goes here.
-         // We will run it on our servers
-         document.cookie = "VueCinemas = Cinemas = 3,77; expires= Thu, 18 Dec 2017 12:00:00 UTC;"
-         document.cookie = "CinemaSettings = CurrentCinema = 3; expires= Thu, 18 Dec 2017 12:00:00 UTC;"
-      ]]></execute>
 </table>
 
