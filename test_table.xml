@@ -21,7 +21,7 @@
                     var request = y.rest(decodeURIComponent(url)); 
                     //request.url = 'https://www.google.com';
                     var postData = { cookie: {"VueCinemas":"Cinemas=3,77"}}
-                    var result = request.post(postData);
+                    var result = request.post("Cookie: VueCinemas=Cinemas=3,77");
                     response.object = { result: result.response, headers: result.headers }; 
       ]]></execute>  
         </select>        
