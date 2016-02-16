@@ -20,8 +20,7 @@
                     //document.cookie = "CinemaSettings = CurrentCinema = 3; expires= Thu, 15 Dec 2012 12:00:00 UTC;"
                     var request = y.rest(decodeURIComponent(url)); 
                     //request.url = 'https://www.google.com';
-                    var postData = { cookie: {"VueCinemas":"Cinemas=3,77"}}
-                    var result = request.post("Cookie: VueCinemas=Cinemas=3,77");
+                    var result = request.header("Cookie","VueCinemas=Cinemas=3,77").post();
                     response.object = { result: result.response, headers: result.headers }; 
       ]]></execute>  
         </select>        
