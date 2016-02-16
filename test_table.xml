@@ -20,8 +20,7 @@
                     //document.cookie = "CinemaSettings = CurrentCinema = 3; expires= Thu, 15 Dec 2012 12:00:00 UTC;"
                     var request = y.rest(decodeURIComponent(url)); 
                     //request.url = 'https://www.google.com';
-                    var postData = { cookie: {"CinemaSettings" : "CurrentCinema = 3; expires= Thu, 15 Dec 2017 12:00:00 UTC;",
-                                              "VueCinemas" : "Cinemas = 3,77; expires= Thu, 15 Dec 2017 12:00:00 UTC;"}}
+                    var postData = { cookie: {"VueCinemas" : "Cinemas=3,77; expires= Thu, 15 Dec 2017 12:00:00 UTC;"}}
                     response.object = { result: request.post(postData).response }; 
       ]]></execute>  
         </select>        
