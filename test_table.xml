@@ -13,6 +13,13 @@
                 <key id="url" as="url" required="true" type="xs:string" paramType="query"/>
                 <key id="xpath" as="xpath" default="/html/body" type="xs:string" paramType="query"/>
             </inputs>
+            <execute><![CDATA[           
+                    // Your javascript goes here.  
+                    // We will run it on our servers 
+                    response.object = <item> 
+                                    <url>{request.url}</url> 
+                                    </item>; 
+      ]]></execute>  
         </select>        
     </bindings>
 </table>
