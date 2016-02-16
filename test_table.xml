@@ -8,7 +8,7 @@
         <select>
             <inputs>
                 <key id="url" as="url" required="true" type="xs:string" paramType="query"/>
-                <key id="xpath" as="xpath" default="/html/body" type="xs:string"/>
+                <key id="xpath" as="xpath" default="/html/body" type="xs:string" paramType="query"/>
             </inputs>
         </select>        
     </bindings>
