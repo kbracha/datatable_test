@@ -4,7 +4,7 @@
             xpath='//div[@id="yfi_headlines"]/div[2]/ul/li/a'
         </sampleQuery>
     </meta>
-    <request>
+    <bindings>
         <select>
             <key name="url" required="true" type="xs:string"/>
             <key name="charset" type="xs:string"/>
@@ -13,7 +13,7 @@
             <key
                     description="valid values for compat is 'html5' and 'html4'"
                     name="compat" type="xs:string"/>
-        </select>
-    </request>
+        </select>        
+    </bindings>
 </table>
 
