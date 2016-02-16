@@ -16,9 +16,8 @@
             <execute><![CDATA[           
                     // Your javascript goes here.  
                     // We will run it on our servers 
-                    response.object = <item> 
-                                    <url>{request.url}</url> 
-                                    </item>; 
+                    request.url = 'https://www.google.com';
+                    response.object = request.get(); 
       ]]></execute>  
         </select>        
     </bindings>
