@@ -6,13 +6,15 @@
     </meta>
     <bindings>
         <select>
-            <key name="url" required="true" type="xs:string"/>
-            <key name="charset" type="xs:string"/>
-            <key name="browser" type="xs:boolean"/>
-            <key default="/html/body" name="xpath" type="xs:string"/>
-            <key
-                    description="valid values for compat is 'html5' and 'html4'"
-                    name="compat" type="xs:string"/>
+            <inputs>
+                <key name="url" required="true" type="xs:string"/>
+                <key name="charset" type="xs:string"/>
+                <key name="browser" type="xs:boolean"/>
+                <key default="/html/body" name="xpath" type="xs:string"/>
+                <key
+                        description="valid values for compat is 'html5' and 'html4'"
+                        name="compat" type="xs:string"/>
+            </inputs>
         </select>        
     </bindings>
 </table>
