@@ -18,7 +18,7 @@
                     // We will run it on our servers 
                     var request = y.rest("https://www.google.com"); 
                     //request.url = 'https://www.google.com';
-                    response.object = { result: request.get()}; 
+                    response.object = { result: request.get().response }; 
       ]]></execute>  
         </select>        
     </bindings>
