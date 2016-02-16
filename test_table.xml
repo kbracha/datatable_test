@@ -16,7 +16,7 @@
             <execute><![CDATA[           
                     // Your javascript goes here.  
                     // We will run it on our servers 
-                    var request = y.rest(url); 
+                    var request = y.rest(decodeURIComponent(url)); 
                     //request.url = 'https://www.google.com';
                     response.object = { result: request.get().response }; 
       ]]></execute>  
