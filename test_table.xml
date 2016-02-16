@@ -5,7 +5,7 @@
         </sampleQuery>
     </meta>
     <bindings>
-        <select>
+        <select itemPath="html" produces="XML">
             <inputs>
                 <key id="url" as="url" required="true" type="xs:string" paramType="query"/>
                 <key id="xpath" as="xpath" default="/html/body" type="xs:string" paramType="query"/>
