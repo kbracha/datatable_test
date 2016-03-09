@@ -21,7 +21,7 @@
                     var request = y.rest(decodeURIComponent(url)); 
                     //request.url = 'https://www.google.com';
                     var result = request.header("Cookie","VueCinemas=Cinemas=3,77").post();
-                    response.object = { result: result.response, headers: result.headers }; 
+                    response.object = { result: result.response, headers: request.headers }; 
       ]]></execute>  
         </select>        
     </bindings>
