@@ -20,7 +20,7 @@
                     //document.cookie = "CinemaSettings = CurrentCinema = 3; expires= Thu, 15 Dec 2012 12:00:00 UTC;"
                     var request = y.rest(decodeURIComponent(url)); 
                     //request.url = 'https://www.google.com';
-                    var result = request.header("host","www.myvue.com").post();
+                    var result = request.header("Host","www.myvue.com").post();
                     response.object = { result: result.response, headers: request.headers }; 
       ]]></execute>  
         </select>        
