@@ -26,7 +26,7 @@
                     request.header("Accept-Encoding","gzip, deflate");
                     request.header("Connection","keep-alive");
                     request.header("Cache-Control","max-age=0");
-                    var result = request.post();
+                    var result = request.get();
                     response.object = { result: result.response, headers: request.headers }; 
       ]]></execute>  
         </select>        
