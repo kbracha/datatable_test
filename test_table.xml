@@ -20,7 +20,13 @@
                     //document.cookie = "CinemaSettings = CurrentCinema = 3; expires= Thu, 15 Dec 2012 12:00:00 UTC;"
                     var request = y.rest(decodeURIComponent(url)); 
                     //request.url = 'https://www.google.com';
-                    var result = request.header("Host","www.myvue.com").post();
+                    request.header("User-Agent","Mozilla/5.0 (Windows NT 6.1; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0");
+                    request.header("Accept","text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
+                    request.header("Accept-Language","en-US,en;q=0.5");
+                    request.header("Accept-Encoding","gzip, deflate");
+                    request.header("Connection","keep-alive");
+                    request.header("Cache-Control","max-age=0");
+                    var result = request.post();
                     response.object = { result: result.response, headers: request.headers }; 
       ]]></execute>  
         </select>        
