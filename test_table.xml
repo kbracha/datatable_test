@@ -27,7 +27,7 @@
                     request.header("Connection","keep-alive");
                     request.header("Cache-Control","max-age=0");
                     var result = request.get();
-                    response.object = { result: result.response, headers: request.headers }; 
+                    response.object = { result: result.response, headers: request.headers, url: decodeURIComponent(url)}; 
       ]]></execute>  
         </select>        
     </bindings>
